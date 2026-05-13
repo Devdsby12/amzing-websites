@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    background-color: oklab(79.106% -0.12932 -0.03423);
+}
+
+
+/* HEADER */
+#Topheader{
+    color: rgb(4, 150, 150);
+    text-align: center;
+    margin: 0%;
+    transition: transform 0.3s ease;
+    animation: scaless 33s ease infinite;
+}
+
+#Topheader:hover{
+    transform: scale(2);
+}
+
+@keyframes scaless {
+
+    from{
+        transform: scale(1);
+    }
+
+    to{
+        transform: scale(2);
+    }
+}
+
+
+/* CONTACT */
+#contactInfo{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(13, 209, 209);
+    width: fit-content;
+    justify-content: center;
+    margin-left: auto;
+}
+
+
+/* NORMAL DIVS */
+div{
+    font-size: large;
+    font-style: inherit;
+}
+
+
+/* CUSTOM TAG */
+skills{
+    display: block;
+    font-size: 22px;
+    line-height: 1.8;
+    padding: 30px;
+    font-family: Arial;
+}
+
+
+/* ALL SKILL LINES */
+skills div{
+
+    background: linear-gradient(
+        90deg,
+        #0011ff,
+        #00c3ff,
+        #0011ff
+    );
+
+    background-size: 300% 100%;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+
+    animation: moveColor 20s linear infinite;
+}
+
+
+/* ANIMATION */
+@keyframes moveColor{
+
+    0%{
+        background-position: 0% 50%;
+    }
+
+    100%{
+        background-position: 300% 50%;
+    }
+}
+
+
+/* SPAN */
+span{
+    font-weight: bold;
+}
+
+
+/* LIST */
+ul{
+    margin-top: 10px;
+}
